@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  data-collector:
+    image: bigipreport/data-collector-k8s:v5.6.5
+    volumes:
+      - /opt/bigipreport/config:/opt/bigipreport/config
+      - /opt/bigipreport/underlay:/opt/underlay
+
